@@ -10,7 +10,7 @@
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/web_icone.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/images/web_icone.png" type="image/x-icon">
 
   <!--
     - custom css link
@@ -42,6 +42,13 @@
   -->
 
   <main>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-btn" data-theme-btn title="Change Theme">
+      <ion-icon name="sunny-outline" class="mixed-icon"></ion-icon>
+      <ion-icon name="moon-outline" class="dark-icon"></ion-icon>
+    </button>
+
 
     <!--
       - #SIDEBAR
@@ -98,7 +105,7 @@
             <div class="contact-info">
               <p class="contact-title">Phone</p>
 
-              <p class="contact-link">+212 777 603 526</p>
+              <p class="contact-link">+212 777 60 35 26</p>
             </div>
 
           </li>
@@ -177,12 +184,83 @@
           </li>
 
           <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Certifications</button>
+          </li>
+
+          <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Skills</button>
           </li>
 
         </ul>
 
       </nav>
+
+      <!-- Modals -->
+      <div class="modal-container" data-modal-container>
+        <div class="overlay" data-overlay></div>
+        <section class="testimonials-modal">
+          <button class="modal-close-btn" data-modal-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </section>
+      </div>
+
+      <div class="modal-container" data-project-modal-container>
+        <div class="overlay" data-overlay></div>
+        <section class="project-modal">
+          <button class="modal-close-btn" data-project-modal-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+          <div class="project-modal-img-wrapper">
+            <img src="" alt="" data-project-modal-img>
+          </div>
+          <div class="project-modal-content">
+            <h4 class="h3 project-modal-title" data-project-modal-title></h4>
+            <p class="project-modal-category" data-project-modal-category></p>
+            <div class="project-modal-text" data-project-modal-text>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="modal-container" data-achievement-modal-container>
+        <div class="overlay" data-overlay></div>
+        <section class="achievement-modal">
+          <button class="modal-close-btn" data-achievement-modal-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+          <div class="achievement-modal-img-wrapper">
+            <img src="" alt="" data-achievement-modal-img>
+          </div>
+          <div class="achievement-modal-content">
+            <h4 class="h3 achievement-modal-title" data-achievement-modal-title></h4>
+            <div class="achievement-modal-meta">
+              <p class="achievement-modal-category" data-achievement-modal-category></p>
+              <span class="dot"></span>
+              <time data-achievement-modal-date></time>
+            </div>
+            <div class="achievement-modal-text" data-achievement-modal-text>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="modal-container" data-certification-modal-container>
+        <div class="overlay" data-overlay></div>
+        <section class="certification-modal">
+          <button class="modal-close-btn" data-certification-modal-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+          <div class="certification-modal-img-wrapper">
+            <img src="" alt="" data-certification-modal-img>
+          </div>
+          <div class="certification-modal-content">
+            <h4 class="h3 certification-modal-title" data-certification-modal-title></h4>
+            <p class="certification-modal-text" data-certification-modal-text>
+            </p>
+          </div>
+        </section>
+      </div>
 
       <!--
         - #ABOUT
@@ -277,172 +355,6 @@
           </ul>
 
         </section>
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">Certifications</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-              <div class="service-content-box">
-                <img src="./assets/files/github-foundations.png" alt="GitHub Foundations Certification Badge"
-                  width="50%" style="display: block; margin-left: auto; margin-right: auto;">
-                <h4 class="h4 service-item-title">GitHub Foundations</h4>
-
-                <p class="service-item-text">
-                  Certified in GitHub fundamentals, including version control, repository management, collaboration
-                  workflows, and best practices for modern software development.
-                </p>
-              </div>
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-content-box">
-                <img src="./assets/files/certified-data-engineer-associate.png"
-                  alt="Data Engineer Associate Certificate" width="100%">
-                <h4 class="h4 service-item-title">Data Engineer Associate</h4>
-
-                <p class="service-item-text">
-                  Certified in core data engineering skills for reliable, clean, and insightful data for AI and
-                  analytics.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-content-box">
-                <img src="./assets/files/aws-cloud-practitioner.png" alt="AWS Cloud Practitioner Certificate"
-                  width="100%">
-
-                <h4 class="h4 service-item-title">AWS Cloud Practitioner (CLF-C02)</h4>
-
-                <p class="service-item-text">
-                  Certified in foundational AWS cloud computing, services, and best practices.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-content-box">
-                <img src="./assets/files/oracle-cloud-infrastructure-ai-foundations-associate.png"
-                  alt="Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate Certificate" width="100%">
-                <h4 class="h4 service-item-title">Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate
-                </h4>
-
-                <p class="service-item-text">
-                  Certified in AI, ML, and Generative AI on Oracle Cloud, emphasizing ethical practices and cloud
-                  deployment.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-content-box">
-                <img src="./assets/files/Understanding Artificial Intelligence.png"
-                  alt="Understanding Artificial Intelligence Certificate" width="100%">
-                <h4 class="h4 service-item-title"> Understanding Artificial Intelligence</h4>
-
-                <p class="service-item-text">
-                  Certified in AI, ML, and Generative AI on Oracle Cloud, emphasizing ethical practices and cloud
-                  deployment.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-content-box">
-                <img src="./assets/files/the hour of code.png" alt="Understanding Artificial Intelligence Certificate"
-                  width="100%">
-                <h4 class="h4 service-item-title">The Hour of Code</h4>
-
-                <p class="service-item-text">
-                  Completed The Hour of Code, demonstrating understanding of basic computer science concepts.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-content-box">
-                <img src="./assets/files/Generation Entrepreneur Bootcamp.png"
-                  alt="Understanding Artificial Intelligence Certificate" width="100%">
-                <h4 class="h4 service-item-title">Generation Entrepreneur Bootcamp</h4>
-
-                <p class="service-item-text">
-                  Completed The Hour of Code, demonstrating understanding of basic computer science concepts.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-content-box">
-                <img src="./assets/files/success mindset.png" alt="Design Thinking Certificate" width="100%">
-                <h4 class="h4 service-item-title"> Success Mindset</h4>
-
-                <p class="service-item-text">
-                  Gained skills to build a success mindset, set goals, create a plan, and develop effective business
-                  habits.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-content-box">
-                <img src="./assets/files/design thinking.png" alt="Design Thinking Certificate" width="100%">
-                <h4 class="h4 service-item-title"> Design Thinking</h4>
-
-                <p class="service-item-text">
-                  Learned to apply design thinking, define problems, and leverage customer feedback to create effective
-                  solutions.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-          </section>
-
-        </div>
-
       </article>
 
       <!--
@@ -470,7 +382,7 @@
               <h4 class="h4 timeline-item-title">Université Hassan 1er – ISSS</h4>
               <span>2025 — Present</span>
               <p class="timeline-text">
-                ➔ Doctor of Philosophy (PhD), Artificial Intelligence & Digital Health
+                ➔ PhD Candidate in Artificial Intelligence & Digital Health : ML & DL, medical image analysis and model explainability
               </p>
             </li>
 
@@ -827,163 +739,195 @@
 
             <li class="project-item active" data-filter-item data-category="data & ai">
 
-              <figure class="project-img">
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
+              <a href="#">
 
-                <img src="./assets/images/Student-Athlete Platform Architecture.png" alt="Student-Athlete Platform"
-                  loading="lazy">
-              </figure>
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
 
-              <h3 class="project-title">Student-Athlete Tracking Platform</h3>
+                  <img src="./assets/images/Student-Athlete Platform Architecture.png" alt="Student-Athlete Platform"
+                    loading="lazy">
+                </figure>
 
-              <p class="project-category">Data Engineering</p>
+                <h3 class="project-title">Student-Athlete Tracking Platform</h3>
 
-              <p class="project-text">
-                Complete platform with ETL pipelines, SQL databases, and GCP deployment
-              </p>
+                <p class="project-category">Data Engineering</p>
 
-            </li>
+                <p class="project-text">
+                  Complete platform with ETL pipelines, SQL databases, and GCP deployment
+                </p>
 
-            <li class="project-item active" data-filter-item data-category="data & ai">
-
-              <figure class="project-img">
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-
-                <img src="./assets/images/Data Engineering Project.png" alt="Big Data Premier League" loading="lazy">
-              </figure>
-
-              <h3 class="project-title">Big Data: Premier League Analysis</h3>
-
-              <p class="project-category">Data Engineering</p>
-
-              <p class="project-text">
-                Data collection, analysis and visualization using Hadoop, Hive, Spark, and Python
-              </p>
+              </a>
 
             </li>
 
             <li class="project-item active" data-filter-item data-category="data & ai">
 
-              <figure class="project-img">
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
+              <a href="#">
 
-                <img src="./assets/images/Player Ball Detection YOLOv5.png" alt="Player Detection" loading="lazy">
-              </figure>
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
 
-              <h3 class="project-title">Player & Ball Detection</h3>
+                  <img src="./assets/images/Data Engineering Project.png" alt="Big Data Premier League" loading="lazy">
+                </figure>
 
-              <p class="project-category">Machine Learning</p>
+                <h3 class="project-title">Big Data: Premier League Analysis</h3>
 
-              <p class="project-text">
-                YOLOv5 model training for sports analytics with custom dataset creation
-              </p>
+                <p class="project-category">Data Engineering</p>
 
-            </li>
+                <p class="project-text">
+                  Data collection, analysis and visualization using Hadoop, Hive, Spark, and Python
+                </p>
 
-            <li class="project-item active" data-filter-item data-category="data & ai">
-
-              <figure class="project-img">
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-
-                <img src="./assets/images/Sprint Performance Analysis.png" alt="Sprint Performance" loading="lazy">
-              </figure>
-
-              <h3 class="project-title">Sprint Performance Analysis</h3>
-
-              <p class="project-category">Data Analytics</p>
-
-              <p class="project-text">
-                Quantitative study of speed and muscular strength indicators using Python and scikit-learn
-              </p>
+              </a>
 
             </li>
 
             <li class="project-item active" data-filter-item data-category="data & ai">
 
-              <figure class="project-img">
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
+              <a href="#">
 
-                <img src="./assets/images/Physical Activity Study.png" alt="Physical Activity Study" loading="lazy">
-              </figure>
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
 
-              <h3 class="project-title">Physical Activity Statistical Study</h3>
+                  <img src="./assets/images/Player Ball Detection YOLOv5.png" alt="Player Detection" loading="lazy">
+                </figure>
 
-              <p class="project-category">Data Analytics</p>
+                <h3 class="project-title">Player & Ball Detection</h3>
 
-              <p class="project-text">
-                Correlation between body parameters and sports performance using SPSS, PCA, and XLSTAT
-              </p>
+                <p class="project-category">Machine Learning</p>
+
+                <p class="project-text">
+                  YOLOv5 model training for sports analytics with custom dataset creation
+                </p>
+
+              </a>
+
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="data & ai">
+
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Sprint Performance Analysis.png" alt="Sprint Performance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Sprint Performance Analysis</h3>
+
+                <p class="project-category">Data Analytics</p>
+
+                <p class="project-text">
+                  Quantitative study of speed and muscular strength indicators using Python and scikit-learn
+                </p>
+
+              </a>
+
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="data & ai">
+
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Physical Activity Study.png" alt="Physical Activity Study" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Physical Activity Statistical Study</h3>
+
+                <p class="project-category">Data Analytics</p>
+
+                <p class="project-text">
+                  Correlation between body parameters and sports performance using SPSS, PCA, and XLSTAT
+                </p>
+
+              </a>
 
             </li>
 
             <li class="project-item active" data-filter-item data-category="web development">
 
-              <figure class="project-img">
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
+              <a href="#">
 
-                <img src="./assets/images/Sports Tracking System.png" alt="Sports Tracking System" loading="lazy">
-              </figure>
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
 
-              <h3 class="project-title">Personalized Sports Tracking System</h3>
+                  <img src="./assets/images/Sports Tracking System.png" alt="Sports Tracking System" loading="lazy">
+                </figure>
 
-              <p class="project-category">Web Development</p>
+                <h3 class="project-title">Personalized Sports Tracking System</h3>
 
-              <p class="project-text">
-                Training recommendations based on physical tests using PHP, MySQL, and Bootstrap
-              </p>
+                <p class="project-category">Web Development</p>
+
+                <p class="project-text">
+                  Training recommendations based on physical tests using PHP, MySQL, and Bootstrap
+                </p>
+
+              </a>
 
             </li>
 
             <li class="project-item active" data-filter-item data-category="web development">
 
-              <figure class="project-img">
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
+              <a href="#">
 
-                <img src="./assets/images/Dental Clinic Platform Design.png" alt="Dental Clinic Management"
-                  loading="lazy">
-              </figure>
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
 
-              <h3 class="project-title">Dental Clinic Management System</h3>
+                  <img src="./assets/images/Dental Clinic Platform Design.png" alt="Dental Clinic Management"
+                    loading="lazy">
+                </figure>
 
-              <p class="project-category">Web Development</p>
+                <h3 class="project-title">Dental Clinic Management System</h3>
 
-              <p class="project-text">
-                Complete web application for managing dental practice operations
-              </p>
+                <p class="project-category">Web Development</p>
+
+                <p class="project-text">
+                  Complete web application for managing dental practice operations
+                </p>
+
+              </a>
 
             </li>
 
             <li class="project-item active" data-filter-item data-category="mobile apps">
 
-              <figure class="project-img">
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
+              <a href="#">
 
-                <img src="./assets/images/Physicare Diabetes App Design.png" alt="Physicare" loading="lazy">
-              </figure>
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
 
-              <h3 class="project-title">Physicare - Diabetes Tracking</h3>
+                  <img src="./assets/images/Physicare Diabetes App Design.png" alt="Physicare" loading="lazy">
+                </figure>
 
-              <p class="project-category">Mobile Development</p>
+                <h3 class="project-title">Physicare - Diabetes Tracking</h3>
 
-              <p class="project-text">
-                Mobile app for diabetes monitoring and sports prescription using Flutter and Firebase
-              </p>
+                <p class="project-category">Mobile Development</p>
+
+                <p class="project-text">
+                  Mobile app for diabetes monitoring and sports prescription using Flutter and Firebase
+                </p>
+
+              </a>
 
             </li>
 
@@ -1005,9 +949,93 @@
 
         <section class="achievement-posts">
 
+          <ul class="filter-list" data-achievement-filter-list>
+
+            <li class="filter-item">
+              <button class="active" data-achievement-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-achievement-filter-btn>Academic</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-achievement-filter-btn>Sportif</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-achievement-filter-btn>Entrepreneurial</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-achievement-filter-btn>Hackathons</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-achievement-select>
+
+              <div class="select-value" data-achievement-select-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-achievement-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-achievement-select-item>Academic</button>
+              </li>
+
+              <li class="select-item">
+                <button data-achievement-select-item>Sportif</button>
+              </li>
+
+              <li class="select-item">
+                <button data-achievement-select-item>Entrepreneurial</button>
+              </li>
+
+              <li class="select-item">
+                <button data-achievement-select-item>Hackathons</button>
+              </li>
+
+            </ul>
+
+          </div>
+
           <ul class="achievement-posts-list">
 
-            <li class="achievement-post-item">
+            <li class="achievement-post-item active" data-achievement-filter-item data-category="entrepreneurial">
+              <a target="_blank">
+                <figure class="achievement-banner-box">
+                  <img src="./assets/images/EMUNI Forum.jpg" alt="EMUNI Forum – Morocco" loading="lazy">
+                </figure>
+
+                <div class="achievement-content">
+                  <div class="achievement-meta">
+                    <p class="achievement-category">Emuni Cooperation</p>
+                    <span class="dot"></span>
+                    <time datetime="2026-04-09">9 Apr 2026</time>
+                  </div>
+
+                  <h3 class="h3 achievement-item-title">EMUNI Forum – Morocco</h3>
+
+                  <p class="achievement-text">
+                    Contributed to the organization of the Entrepreneurship Sprint Workshop held by EMUNI University at Hassan First University, Settat (Morocco).
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="achievement-post-item active" data-achievement-filter-item data-category="academic">
               <a target="_blank">
                 <figure class="achievement-banner-box">
                   <img src="./assets/images/ISTAS2026.jpg" alt="ISTAS 2026 Conference" loading="lazy">
@@ -1030,7 +1058,7 @@
             </li>
 
 
-            <li class="achievement-post-item">
+            <li class="achievement-post-item active" data-achievement-filter-item data-category="sportif">
               <a target="_blank">
 
                 <figure class="achievement-banner-box">
@@ -1060,7 +1088,7 @@
             </li>
 
 
-            <li class="achievement-post-item">
+            <li class="achievement-post-item active" data-achievement-filter-item data-category="entrepreneurial">
               <a target="_blank">
 
                 <figure class="achievement-banner-box">
@@ -1089,7 +1117,7 @@
               </a>
             </li>
 
-            <li class="achievement-post-item">
+            <li class="achievement-post-item active" data-achievement-filter-item data-category="hackathons">
               <a target="_blank">
 
                 <figure class="achievement-banner-box">
@@ -1118,7 +1146,7 @@
             </li>
 
 
-            <li class="achievement-post-item">
+            <li class="achievement-post-item active" data-achievement-filter-item data-category="hackathons">
               <a target="_blank">
 
                 <figure class="achievement-banner-box">
@@ -1148,7 +1176,7 @@
 
 
 
-            <li class="achievement-post-item">
+            <li class="achievement-post-item active" data-achievement-filter-item data-category="hackathons">
               <a target="_blank">
 
                 <figure class="achievement-banner-box">
@@ -1178,7 +1206,7 @@
             </li>
 
 
-            <li class="achievement-post-item">
+            <li class="achievement-post-item active" data-achievement-filter-item data-category="hackathons">
               <a target="_blank">
 
                 <figure class="achievement-banner-box">
@@ -1203,6 +1231,281 @@
 
                 </div>
 
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <article class="certifications" data-page="certifications">
+
+        <header>
+          <h2 class="h2 article-title">Certifications</h2>
+        </header>
+
+        <section class="certification-posts">
+
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-certification-filter-btn>All</button>
+            </li>
+            <li class="filter-item">
+              <button data-certification-filter-btn>Academic</button>
+            </li>
+            <li class="filter-item">
+              <button data-certification-filter-btn>Technical</button>
+            </li>
+            <li class="filter-item">
+              <button data-certification-filter-btn>Entrepreneurship</button>
+            </li>
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-certification-select>
+              <div class="select-value" data-certification-select-value>Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-certification-select-item>All</button>
+              </li>
+              <li class="select-item">
+                <button data-certification-select-item>Academic</button>
+              </li>
+              <li class="select-item">
+                <button data-certification-select-item>Technical</button>
+              </li>
+              <li class="select-item">
+                <button data-certification-select-item>Entrepreneurship</button>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="certification-posts-list">
+
+            <li class="certification-post-item active" data-certification-filter-item data-category="academic">
+              <a target="_blank">
+                <figure class="certification-banner-box">
+                  <div class="certification-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/files/Attestation_Posters.jpg" alt="ISTAS'2026 Certificate" loading="lazy">
+                </figure>
+
+                <div class="certification-content">
+                  <h3 class="h3 certification-item-title">ISTAS'2026 - Poster Presentation</h3>
+                  <p class="certification-text">
+                    Presented research on "Explainable GANs for Medical Imaging" at the 1st International Conference on Scientific and Technological Innovation Applied to Health.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="certification-post-item active" data-certification-filter-item data-category="academic">
+              <a target="_blank">
+                <figure class="certification-banner-box">
+                  <div class="certification-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/files/formation 1 research.jpg" alt="Research Integrity Certificate" loading="lazy">
+                </figure>
+
+                <div class="certification-content">
+                  <h3 class="h3 certification-item-title">Research Integrity & Publishing Ethics</h3>
+                  <p class="certification-text">
+                    Completed specialized training on the fundamentals of research integrity and academic publishing ethics with Taylor & Francis Group.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="certification-post-item active" data-certification-filter-item data-category="academic">
+              <a target="_blank">
+                <figure class="certification-banner-box">
+                  <div class="certification-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/files/formation 2 research .jpg" alt="Medical Journals Guide Certificate"
+                    loading="lazy">
+                </figure>
+
+                <div class="certification-content">
+                  <h3 class="h3 certification-item-title">Research With Impact: Medical Journals</h3>
+                  <p class="certification-text">
+                    Mastered strategies for impactful research and navigation of Taylor & Francis Medical Journals through the CNRST.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="certification-post-item active" data-certification-filter-item data-category="technical">
+              <a target="_blank">
+                <figure class="certification-banner-box">
+                  <div class="certification-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/files/github-foundations.png" alt="GitHub Foundations" loading="lazy">
+                </figure>
+
+                <div class="certification-content">
+                  <h3 class="h3 certification-item-title">GitHub Foundations</h3>
+                  <p class="certification-text">
+                    Certified in GitHub fundamentals, including version control, repository management, collaboration workflows, and best practices for modern software development.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="certification-post-item active" data-certification-filter-item data-category="technical">
+              <a target="_blank">
+                <figure class="certification-banner-box">
+                  <div class="certification-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/files/certified-data-engineer-associate.png" alt="Data Engineer Associate"
+                    loading="lazy">
+                </figure>
+
+                <div class="certification-content">
+                  <h3 class="h3 certification-item-title">Data Engineer Associate</h3>
+                  <p class="certification-text">
+                    Certified in core data engineering skills for reliable, clean, and insightful data for AI and analytics.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="certification-post-item active" data-certification-filter-item data-category="technical">
+              <a target="_blank">
+                <figure class="certification-banner-box">
+                  <div class="certification-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/files/aws-cloud-practitioner.png" alt="AWS Cloud Practitioner" loading="lazy">
+                </figure>
+
+                <div class="certification-content">
+                  <h3 class="h3 certification-item-title">AWS Cloud Practitioner (CLF-C02)</h3>
+                  <p class="certification-text">
+                    Certified in foundational AWS cloud computing, services, and best practices.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="certification-post-item active" data-certification-filter-item data-category="technical">
+              <a target="_blank">
+                <figure class="certification-banner-box">
+                  <div class="certification-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/files/oracle-cloud-infrastructure-ai-foundations-associate.png"
+                    alt="Oracle AI Associate" loading="lazy">
+                </figure>
+
+                <div class="certification-content">
+                  <h3 class="h3 certification-item-title">OCI 2025 Certified AI Foundations Associate</h3>
+                  <p class="certification-text">
+                    Certified in AI, ML, and Generative AI on Oracle Cloud, emphasizing ethical practices and cloud deployment.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="certification-post-item active" data-certification-filter-item data-category="technical">
+              <a target="_blank">
+                <figure class="certification-banner-box">
+                  <div class="certification-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/files/Understanding Artificial Intelligence.png" alt="Understanding AI"
+                    loading="lazy">
+                </figure>
+
+                <div class="certification-content">
+                  <h3 class="h3 certification-item-title">Understanding Artificial Intelligence</h3>
+                  <p class="certification-text">
+                    Certified in AI, ML, and Generative AI on Oracle Cloud, emphasizing ethical practices and cloud deployment.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="certification-post-item active" data-certification-filter-item data-category="technical">
+              <a target="_blank">
+                <figure class="certification-banner-box">
+                  <div class="certification-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/files/the hour of code.png" alt="The Hour of Code" loading="lazy">
+                </figure>
+
+                <div class="certification-content">
+                  <h3 class="h3 certification-item-title">The Hour of Code</h3>
+                  <p class="certification-text">
+                    Completed The Hour of Code, demonstrating understanding of basic computer science concepts.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="certification-post-item active" data-certification-filter-item data-category="entrepreneurship">
+              <a target="_blank">
+                <figure class="certification-banner-box">
+                  <div class="certification-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/files/Generation Entrepreneur Bootcamp.png" alt="Entrepreneur Bootcamp"
+                    loading="lazy">
+                </figure>
+
+                <div class="certification-content">
+                  <h3 class="h3 certification-item-title">Generation Entrepreneur Bootcamp</h3>
+                  <p class="certification-text">
+                    Completed the prestigious entrepreneurship bootcamp at UM6P, focusing on innovation and business strategy.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="certification-post-item active" data-certification-filter-item data-category="entrepreneurship">
+              <a target="_blank">
+                <figure class="certification-banner-box">
+                  <div class="certification-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/files/success mindset.png" alt="Success Mindset" loading="lazy">
+                </figure>
+
+                <div class="certification-content">
+                  <h3 class="h3 certification-item-title">Success Mindset</h3>
+                  <p class="certification-text">
+                    Gained skills to build a success mindset, set goals, create a plan, and develop effective business habits.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="certification-post-item active" data-certification-filter-item data-category="entrepreneurship">
+              <a target="_blank">
+                <figure class="certification-banner-box">
+                  <div class="certification-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/files/design thinking.png" alt="Design Thinking" loading="lazy">
+                </figure>
+
+                <div class="certification-content">
+                  <h3 class="h3 certification-item-title">Design Thinking</h3>
+                  <p class="certification-text">
+                    Learned to apply design thinking, define problems, and leverage customer feedback to create effective solutions.
+                  </p>
+                </div>
               </a>
             </li>
 
